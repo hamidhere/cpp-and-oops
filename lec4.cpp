@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 // DataTypes, Local and Global veriables.
-int glo = 20;
+int glo = 20; //glo is aa global variable
 void sum()
 {
     int a;
