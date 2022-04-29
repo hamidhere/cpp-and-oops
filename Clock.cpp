@@ -24,8 +24,8 @@ int main()
     int minutes;
     int seconds;
 
-    myClock.setTime(5, 4, 30);     // Line 1
-    cout << "Line 2: myClock: ";   // Line 2
+    myClock.setTime(5, 4, 30);     
+    cout << "Line 2: myClock: ";   
     myClock.printTime();           // print the time of myClock Line 3
     cout << endl;                  // Line 4
     cout << "Line 5: yourClock: "; // Line 5
