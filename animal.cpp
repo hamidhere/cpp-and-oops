@@ -10,10 +10,10 @@ class Animal{
     string colour,food;
     void setdata(string so,int sp);
     void getdata(){
-        cout<<"The sound of the cat  is : "<<sound<<endl;
+        cout<<"The sound of the cat  was : "<<sound<<endl;
         cout<<"The favorite food of the cat  is : "<<food<<endl;
         cout<<"The colour of the cat  is : "<<colour<<endl;
-        cout<<"The no. of the cat  is : "<<number<<endl;
+        cout<<"The no. of the cat  is : "<<number<<endl;        
     }
 };
 
