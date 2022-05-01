@@ -7,7 +7,7 @@ class Employee
     int sellary;
 
 public:
-    void setid()
+    void setid(void)
     {
         sellary = 11500;
         cout << "Enter employee ID: " << endl;
@@ -15,7 +15,7 @@ public:
         cout << "Enter employee sellary: " << endl;
         cin >> sellary;
     }
-    void getid()
+    void getid(void)
     {
         cout << "ID is: " << id << endl;
         cout << "Sellary is: " << sellary << endl;
