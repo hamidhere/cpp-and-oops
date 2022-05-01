@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 //static data mambers and methods
+//called outside the class and main function
 class Employee
 {
     int id;
