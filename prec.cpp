@@ -1,40 +1,36 @@
 #include <iostream>
-#include <string>
 using namespace std;
-class binary
+
+class Employee
 {
-    string s;
+    int id;
+    int salary;
 
 public:
-    void read(void);
-    void check_bin(void);
-    int ones_comp();
-};
-void binary::read(void)
-{
-    cout << "Entre a Binary Number: " << endl;
-    cin >> s;
-}
-int binary::ones_comp()
-{
-    for (int i = 0; i < s.length(); i++)
+    void setId(void)
     {
-        if (s.at(i) == '0')
-        {
-            s.at(i) = '1';
-        }
-        else
-        {
-            s.at(i) = '0';
-        }
+        salary = 122;
+        cout << "Enter the id of employee" << endl;
+        cin >> id;
     }
-    return ones_comp;
-}
+
+    void getId(void)
+    {
+        cout << "The id of this employee is " << id << endl;
+    }
+};
+
 int main()
 {
-    binary b;
-    b.read();
-    b.ones_comp();
+    // Employee harry, rohan, lovish, shruti;
+    // harry.setId();
+    // harry.getId();
+    Employee fb[4];
+    for (int i = 0; i < 4; i++)
+    {
+        fb[i].setId();
+        fb[i].getId();
+    }
 
     return 0;
 }
