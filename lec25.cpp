@@ -12,8 +12,7 @@ public:
         sellary = 11500;
         cout << "Enter employee ID: " << endl;
         cin >> id;
-        cout << "Enter employee sellary: " << endl;
-        cin >> sellary;
+        
     }
     void getid(void)
     {
@@ -36,7 +35,7 @@ int main()
     company[2].getid();*/
     for (int i = 0; i < 3; i++)
     {
-        /* code */
+        /* code*/
         company[i].setid();
         company[i].getid();
     }
