@@ -20,6 +20,7 @@ class Complex
     //****to access a specific function of friend class***
     //friend int Calculator ::sumRealComplex(Complex, Complex);
     //friend int Calculator ::sumCompComplex(Complex, Complex);
+    //to access the whole friend class in cass of too many functions.
     friend class Calculator;
 public:
     void setNumber(int n1, int n2)
