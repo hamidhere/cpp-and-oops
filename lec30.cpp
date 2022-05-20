@@ -4,14 +4,14 @@ class Complex
 {
     int a,b;
     public:
-    Complex(int , int );
+    Complex(int , int ); //--> constructure decleiration
     void printNumbers()
     {
         cout<<" Sum of the numbers is "<<a<<"+"<<b<<"i"<<endl;
     }
 
 };
-Complex ::Complex(int x, int y)
+Complex ::Complex(int x, int y) //--> parametrizied constructre as iit takes 2 parameters  
 {
     a=x;
     b=y;
