@@ -11,15 +11,16 @@ class Complex
     }
 
 };
-Complex ::Complex(int x, int y) //--> parametrizied constructre as iit takes 2 parameters  
+Complex ::Complex(int x, int y) //--> parametrizied constructre as it takes 2 parameters  
 {
     a=x;
     b=y;
 }
 int main(){
-    
+    //implicit call
     Complex a(5 , 7);
     a.printNumbers();
+    //explicit call
     Complex b=Complex( 6 , 8);
     b.printNumbers();
 
