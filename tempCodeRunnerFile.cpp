@@ -1,1 +1,1 @@
-omplex sumComplex(complex o1,complex o2)
+friend void distance(Point , Point);
