@@ -1,30 +1,34 @@
 #include <iostream>
 using namespace std;
-//Structures, Unions & Enums 
+// Structures, Unions & Enums
 typedef struct student /*typedef  is a keyword used to assign
                          alternative names to the existing datatypes.*/
 {
     int age;
     char section;
-    double gpa;    
+    double gpa;
 } stu;
 union car
-    {
+{
     int modle;
     char colour;
     double cc;
+};
 
-    };
-
- 
-int main(){
+int main()
+{
     //******enums****
-    enum room {hami,needi,mooni};
+    enum room
+    {
+        hami,
+        needi,
+        mooni
+    };
     room d32 = needi;
-    cout<<d32<<endl;
-    cout<<hami<<endl;    
-    cout<<needi<<endl;
-     cout<<mooni<<endl;
+    cout << d32 << endl;
+    cout << hami << endl;
+    cout << needi << endl;
+    cout << mooni << endl;
     //******Unions*****
     /*union car bmw;
     union car ford;
@@ -34,7 +38,7 @@ int main(){
     cout<<"modle "<<bmw.modle<<endl;
     cout<<"colour "<<bmw.colour<<endl;
     cout<<"cc "<<bmw.cc<<endl;*/
-      //  ****structs****
+    //  ****structs****
 
     /*    stu hami;
         stu evie;
@@ -44,9 +48,6 @@ int main(){
     cout<<"Age of hami is: "<<hami.age<<endl;
     cout<<"Section of hami is: "<<hami.section<<endl;
     cout<<"gpa of hami is: "<<hami.gpa<<endl;*/
-
-
-
 
     return 0;
 }
