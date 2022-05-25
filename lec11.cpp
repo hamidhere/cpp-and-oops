@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    //break and continue statements
+    //Break and Continue statements
     int i;
 
     for(i=0; i<=10; i++)
