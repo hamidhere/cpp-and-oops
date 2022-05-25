@@ -5,7 +5,7 @@ int main(){
     //break and continue statements
     int i;
 
-    for(i=0; i<=10;ic)
+    for(i=0; i<=10; i++)
     {
         
         /*if(i==5)

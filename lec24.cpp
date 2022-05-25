@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 //static data mambers and methods
+//static data mambers and methods have only access of other static data mambers and methods. 
 //called outside the class and main function
+//static data mambers and methods can be directly called by using ClassName ::StaticFunctionName(). 
 class Employee
 {
     int id;
