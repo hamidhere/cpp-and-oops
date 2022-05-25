@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-//***nesting functions****
+//***Nesting Functions****
 class binary
 {
     string s;
