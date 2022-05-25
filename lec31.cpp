@@ -2,33 +2,36 @@
 using namespace std;
 class Complex
 {
-    int a, b; 
-    public:
-    Complex (int x, int y)
-    {
-        a=x;
-        b=y;
 
-    }
-    Complex (int x)
+    int a, b;
+
+public:
+    Complex(int x, int y) //Parametrized constructers
     {
-        a=x;
-        b=0;
+        a = x;
+        b = y;
     }
-    Complex()
+    Complex(int x) //Parametrized constructers
     {
-        a=0;
-        b=0;
+    {
+        a = x;
+        b = 0;
     }
-     void displayPoints()
+    Complex() //default constructers
     {
-        cout << "The points are displayed here: "<< "(" << a << "," << b << ")" << endl;
+        a = 0;
+        b = 0;
+    }
+    void displayPoints()
+    {
+        cout << "The points are displayed here: "
+             << "(" << a << "," << b << ")" << endl;
     }
 };
 int main()
 {
-    
-    Complex c(5,7);
+
+    Complex c(5, 7);
     c.displayPoints();
     Complex c1(5);
     c1.displayPoints();
