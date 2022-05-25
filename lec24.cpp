@@ -3,7 +3,7 @@ using namespace std;
 //static data mambers and methods
 //static data mambers and methods have only access of other static data mambers and methods. 
 //called outside the class and main function
-//static data mambers and methods can be directly called by using ClassName ::StaticFunctionName(). 
+//static data mambers and methods can be directly called by using ClassName ::StaticFunctionName(); 
 class Employee
 {
     int id;
@@ -25,7 +25,7 @@ public:
         cout << "The value of count is " << count << endl;
     }
 };
-int Employee ::count;
+int Employee ::count; //No need to initialize because they have default value 0.
 int main()
 {
     Employee hamiii;
