@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-                        //pointers
+                        //************pointers
 
     int a=15;
     int* b = &a;
