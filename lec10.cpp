@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-    //LOOPS
+    //LOOPS and its types
     int i=0;
     /*for(i=0; 20  i<30; i++)
     {
