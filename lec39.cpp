@@ -18,6 +18,6 @@ class Derived : public Base
 int main()
 {
     Derived c;
-    cout<<"C invoked"<<endl;
+    cout<<"C invoked "<<endl;
     return 0;
 }
