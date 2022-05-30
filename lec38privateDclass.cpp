@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//example of inheritance
 class Base
 {
     int data1;
@@ -40,8 +41,8 @@ void Derived ::display()
 {
     cout << "start" << endl;
     cout << "Data 1 is: " << setData1() << endl;
-    cout << "Data 2 is:" << data2 << endl;
-    cout << "Data 3 is:" << data3 << endl;
+    cout << "Data 2 is: " << data2 << endl;
+    cout << "Data 3 is: " << data3 << endl;
 }
 int main()
 {
