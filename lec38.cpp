@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//Single inheritance
 class Base
 {
     int data1;
