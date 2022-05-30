@@ -35,8 +35,8 @@ void Exam ::setMarks(float m1, float m2)
 }
 void Exam ::getMarks()
 {
-    cout << "Marks of physics" << physics << endl;
-    cout << "Marks of physics" << english << endl;
+    cout << "Marks of physics: " << physics << endl;
+    cout << "Marks of physics: " << english << endl;
 }
 class Result : public Exam
 {
@@ -48,7 +48,7 @@ public:
         
         void getRoll();
         void getMarks();
-        cout<<"Percentage"<<(physics+english)/2<<endl;
+        cout<<"Percentage: "<<(physics+english)/2<<endl;
     }
 };
 int main()
