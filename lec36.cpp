@@ -15,7 +15,7 @@ public:
     void BsetData()
     {
         a = 1;
-        cout << a<<": Inheritance ";
+        cout << a<<": Inheritance: ";
     }
 };
 class Derived : public Base
@@ -33,7 +33,7 @@ public:
     {
         
         int data1 = 2;
-        cout<<data1<<": Its types"<<endl;        
+        cout<<data1<<": Its types: "<<endl;        
         
     }
 };
