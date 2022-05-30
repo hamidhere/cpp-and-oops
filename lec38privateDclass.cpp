@@ -39,7 +39,7 @@ void Derived ::process()
 }
 void Derived ::display()
 {
-    cout << "start" << endl;
+    cout << "start " << endl;
     cout << "Data 1 is: " << setData1() << endl;
     cout << "Data 2 is: " << data2 << endl;
     cout << "Data 3 is: " << data3 << endl;
