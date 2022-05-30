@@ -1,36 +1,56 @@
 #include <iostream>
 using namespace std;
-
-class Employee
+class Base
 {
-    int id;
-    int salary;
+    int data1;
 
 public:
-    void setId(void)
-    {
-        salary = 122;
-        cout << "Enter the id of employee" << endl;
-        cin >> id;
-    }
-
-    void getId(void)
-    {
-        cout << "The id of this employee is " << id << endl;
-    }
+    int data2;
+    void setData1();
+    int getData1();
+    int getData2();
 };
+void Base ::setData1(void)
+{
+    data1 = 30;
+    data2 = 40;
+}
+int Base ::getData1()
+{
+    return data1;
+}
+int Base ::getData2()
+{
+    return data2;
+}
+class Derived : public Base
+{
+    int data3;
+
+public:
+    void action();
+    void display();
+};
+void Derived ::action()
+{
+    data3 = data2 * getData1();
+}
+void Derived ::display()
+{
+    
+    cout<<"Data after the combination of two classes:"<<endl;
+    cout<<"Value of data 1:"<<getData1()<<endl;
+    cout<<"Value of data 2:"<<data2<<endl;
+    cout<<"Value of data 3:"<<data3<<endl;
+}
 
 int main()
 {
-    // Employee harry, rohan, lovish, shruti;
-    // harry.setId();
-    // harry.getId();
-    Employee fb[4];
-    for (int i = 0; i < 4; i++)
-    {
-        fb[i].setId();
-        fb[i].getId();
-    }
+    Derived der;
+    der.setData1();
+    der.action();
+    der.display();
+
 
     return 0;
 }
