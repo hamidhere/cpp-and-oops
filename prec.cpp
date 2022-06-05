@@ -38,10 +38,10 @@ void Derived ::action()
 void Derived ::display()
 {
     
-    cout<<"Data after the combination of two classes:"<<endl;
-    cout<<"Value of data 1:"<<getData1()<<endl;
-    cout<<"Value of data 2:"<<data2<<endl;
-    cout<<"Value of data 3:"<<data3<<endl;
+    cout<<"Data after the combination of two classes: "<<endl;
+    cout<<"Value of data 1: "<<getData1()<<endl;
+    cout<<"Value of data 2: "<<data2<<endl;
+    cout<<"Value of data 3: "<<data3<<endl;
 }
 
 int main()
