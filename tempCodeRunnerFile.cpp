@@ -1,1 +1,1 @@
-friend void distance(Point , Point);
+: public SimpleCalculator
