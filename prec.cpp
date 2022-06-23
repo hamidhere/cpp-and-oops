@@ -1,56 +1,71 @@
 #include <iostream>
 using namespace std;
-class Base
-{
-    int data1;
+class Student
 
-public:
-    int data2;
-    void setData1();
-    int getData1();
-    int getData2();
-};
-void Base ::setData1(void)
 {
-    data1 = 30;
-    data2 = 40;
-}
-int Base ::getData1()
-{
-    return data1;
-}
-int Base ::getData2()
-{
-    return data2;
-}
-class Derived : public Base
-{
-    int data3;
+    int id;
+    int rollNo;
+    public:
+    void setData()
+    {
+       cout<<"ID of the Student is:"<<endl;
+       cin>>id;
+        cout<<"Roll No of the student is: "<<endl;
+        cin>>rollNo;
+    }
+    void getData()
+    {
+        cout<<"ID of the Student is:"<<id<<endl;
+        cout<<"Roll No of the student is: "<<rollNo<<endl;
 
-public:
-    void action();
-    void display();
+    }
 };
-void Derived ::action()
+class Test :  public Student
 {
-    data3 = data2 * getData1();
-}
-void Derived ::display()
-{
+    int phy;
+    int math;
+    public:
+    void setMarks(int p, int m)
+    {
+        phy = p;
+        math = m;
+    }      
+    void displayMarks()
+    {  
+    int sum;
+    cout<<"Marks in Physics: "<<phy<<endl;
+    cout << "Marks in math: "<<math<<endl;
+        sum=phy+math;
+        cout<<"Sum of the Marks is:"<<sum<<endl;
+    }
     
-    cout<<"Data after the combination of two classes: "<<endl;
-    cout<<"Value of data 1: "<<getData1()<<endl;
-    cout<<"Value of data 2: "<<data2<<endl;
-    cout<<"Value of data 3: "<<data3<<endl;
-}
-
-int main()
+};
+class Sport : public Student
 {
-    Derived der;
-    der.setData1();
-    der.action();
-    der.display();
+    public:
+    int cric , footbal;
+    void setScore(int c, int f)
+    {
+        int total;
+        cric = c;
+        footbal = f;
+        cout<<"Score in cric:"<<cric<<endl;
+        cout<<"Score in football: "<<footbal<<endl;
+        total = cric + footbal;
+        cout<<"Total Score is: \n"<<total<<endl;
 
+    }
+
+};
+
+int main(){
+Test t;
+t.setData();
+t.getData();
+t.setMarks(95 ,99);
+t.displayMarks();
+Sport s;
+s.setScore(5 ,4);
 
     return 0;
 }
