@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 //ambiguity in inheritance
+
 int main(){
 
     
