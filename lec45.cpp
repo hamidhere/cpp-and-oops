@@ -4,7 +4,6 @@ class Student
 
 {
 
-
 public:
     int rollNo;
     void setData()
@@ -26,7 +25,6 @@ protected:
     int math;
 
 public:
-   
     void setMarks(int p, int m)
     {
         phy = p;
@@ -68,13 +66,11 @@ public:
 class Result : public Test, public Sport
 {
 public:
-    
     int Final;
     void FinalResult()
     {
         Final = math + phy + cric + footbal;
         cout << "Final Result of the Student is:\n " << Final << endl;
-        
     }
 };
 
