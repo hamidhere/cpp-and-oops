@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//Virtual Functions
 class Base
 {
 public:
