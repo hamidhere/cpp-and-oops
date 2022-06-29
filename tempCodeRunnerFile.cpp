@@ -1,1 +1,1 @@
-: public SimpleCalculator
+dptr->dVar;
