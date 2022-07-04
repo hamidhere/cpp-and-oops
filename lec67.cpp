@@ -11,10 +11,23 @@ float avg(t1 a,t2 b)
     cout<<"average:"<<X<<endl;
     return X;
 }
+template <class L, class M>
+void swapp(L &m,M &o)
+{
+    L temp=m;
+    m=o;
+    o=temp;
+    // cout<<m"\n"<<o<<endl;
+
+
+}
 
 int main()
 {
     avg<double,double,float>(6.5,9.7);
+    string e="Chracter",f="String";
+    swap(e,f);
+    cout<<e<<"\n"<<f<<endl;
     // display();
     return 0;
 }
