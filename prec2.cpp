@@ -1,32 +1,22 @@
 #include <iostream>
-#include <string>
+#include <vector>
 using namespace std;
 
-// Base class
-class Sid
-{
-	public:
-    string father = "siddique";
-    void displayF()
-    {
-    cout<<"Siddique is the father of ";
-    }
-  
-};
-    class Ham: public Sid
-    {
-    public:
-    string son ="Hamid.";
-    void displayS()
-    {
-    cout<<son<<endl;
-    }
-         
-    };
 int main()
+{
+
+    vector<int> vec1 = {1, 2, 3, 4};
+    vector<int> vec2 = {6, 7, 8, 9};
+    for (auto elements : &vec1 )
     {
-    Ham D;
-    D.displayF();
-    D.displayS();
-    return 0;
+        cout<<elements<<" ";
     }
+    for (auto &p : vec1)
+    {
+        p=p*2;
+        cout<<"Doubled:"<<" ";
+    }
+
+
+    return 0;
+}
