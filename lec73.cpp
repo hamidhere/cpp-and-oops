@@ -8,7 +8,7 @@ int main()
     strN["hamid"]="raza";
     map<string, string>::iterator itr;
     itr=strN.begin();
-    cout<<(*itr).first<<" "<< (*itr).second<<endl;
+    cout<<(*itr).first<<"  "<< (*itr).second<<endl;
     itr=strN.end();
 
         return 0;
