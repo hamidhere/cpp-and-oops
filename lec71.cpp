@@ -14,7 +14,7 @@ void display(vector<T> &V)
 int main()
 {
     vector<int> vec;
-    vector<string> vec1(5);//Character vector of size 5;
+    vector<string> vec1(5)ZZ;//Character vector of size 5;
     // vec1.push_back("'HAMID'");    
     // display(vec1);
     // vector<char> vec2(5);
